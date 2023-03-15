@@ -1,16 +1,18 @@
 :root {
   --border-rad: 10px;
   --color-base-bg: #f2f2f2;
-  --color-base-text: #383838;
-  --color-btn-bg: #383838;
+  --color-base-text: #262626;
+  --color-btn-bg: #2626268;
   --border-btn: 1px solid var(--color-base-text);
 }
 
 :root.dark {
-  --color-base-bg: #383838;
+  --color-base-bg: #262626;
   --color-base-text: #f2f2f2;
-  --color-btn-bg: #383838;
+  --color-btn-bg: #262626;
   --border-btn: 1px solid #f2f2f2;
+  --color-base-bg-two: #595959;
+  background-color: #0d0d0d;
 }
 
 :root.light {
@@ -18,6 +20,8 @@
   --color-base-text: #383838;
   --color-btn-bg: #f2f2f2;
   --border-btn: 1px solid #383838;
+  --color-base-bg-two: #ffffff;
+  background-color: #ffffff;
 }
 
 * {
@@ -106,9 +110,11 @@ li {
 
 #search-field {
   width: 30vw;
-  border-radius: 40px;
+  border-radius: 10rem;
   font-size: 2rem;
   font-weight: 1000;
+  background-color: var(--color-base-bg-two);
+  border: 1px solid var(--color-base-text);
 }
 
 .profile-container {
@@ -133,5 +139,32 @@ li {
 
 .welcome-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+.theme-toggle {
+  border: 1px solid var(--color-base-text);
+  border-radius: 10rem;
+  padding: 1vw;
+  background-color: var(--color-base-bg-two);
+}
+
+.icons-theme {
+  width: 2vw;
+}
+
+.btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vw;
+}
+
+.header-btn {
+  border: 1px solid var(--color-base-text);
+  border-radius: 10rem;
+  padding: 0.5vw;
+  background-color: var(--color-base-bg-two);
+  font-size: 1rem;
+  font-weight: bold;
 }

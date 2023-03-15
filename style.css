@@ -70,8 +70,8 @@ body {
 }
 
 .icons-main {
-    height: 2rem;
-    cursor: pointer;
+  height: 2rem;
+  cursor: pointer;
 }
 
 .img-icon-logo {
@@ -130,8 +130,8 @@ li {
 }
 
 .user-profile {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .user-profile-big {
@@ -152,8 +152,8 @@ li {
 }
 
 .icons-theme {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .btns-container {

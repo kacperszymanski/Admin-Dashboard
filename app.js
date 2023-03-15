@@ -1,12 +1,12 @@
 function setTheme() {
-    const root = document.documentElement;
-    const newTheme = root.className === 'dark' ? 'light' : 'dark';
-    root.className = newTheme;
-
-    document.querySelector('.theme-name').textContent = newTheme;
+  const root = document.documentElement;
+  const themeName = document.querySelector(".theme-name");
+  const newTheme = root.className === "dark" ? "light" : "dark";
+  root.className = newTheme;
+  themeName.textContent = newTheme;
 }
 
-document.querySelector('.theme-toggle').addEventListener('click', setTheme)
+const themeToggle = document.querySelector(".theme-toggle");
+themeToggle.addEventListener("click", setTheme);
 
-
-setTheme()
+setTheme();

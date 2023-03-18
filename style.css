@@ -115,15 +115,20 @@ li {
   width: 40rem;
   gap: 1rem;
   padding-left: 1rem;
+  background-color: var(--color-base-bg-two);
+  border: 1px solid var(--color-base-text);
+  border-radius: 10rem;
+  display: flex
+
 }
 
 #search-field {
-  width: 30rem;
-  border-radius: 10rem;
+  width: max-content;
+
   font-size: 2rem;
   font-weight: 1000;
   background-color: var(--color-base-bg-two);
-  border: 1px solid var(--color-base-text);
+
 }
 
 .profile-container {
@@ -210,8 +215,6 @@ li {
   padding: 1rem;
   display: grid;
   grid-template: 1fr auto / 1rem 1fr;
-  grid-row: 1/-1;
-  cursor: pointer;
 
 }
 
@@ -263,3 +266,11 @@ div > h4 {
   width: 100%;
   height: 1px;
   background-color: lightgray;}
+
+  .action-block> img {
+    height: 2rem;
+  }
+
+  .action-block{
+    display: flex;
+  }

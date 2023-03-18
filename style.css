@@ -52,7 +52,8 @@ body {
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 3rem 2rem;
+
   
 }
 .sidebar {
@@ -124,13 +125,17 @@ li {
 
 #search-field {
   width: max-content;
-
+border: 0px;
   font-size: 2rem;
   font-weight: 1000;
   background-color: var(--color-base-bg-two);
 
 }
 
+.search-img-header{
+  width: 3rem;
+
+}
 .profile-container {
   width: 30rem;
   justify-content: flex-end;
@@ -268,9 +273,35 @@ div > h4 {
   background-color: lightgray;}
 
   .action-block> img {
-    height: 2rem;
+    height: 3rem;
   }
 
   .action-block{
     display: flex;
   }
+
+.trending-content{
+display: flex;
+}
+
+  .trend-img{
+    height: 5rem;
+
+  }
+
+  .trend{display: flex;
+  gap: 1rem;}
+
+
+
+  .action-block > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  li >p:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+

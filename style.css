@@ -46,15 +46,12 @@ body {
   background-color: var(--color-base-bg);
   border-radius: var(--border-rad);
   padding: 1rem;
-
 }
 
 .main-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 1rem 2rem 3rem 2rem;
-
-  
 }
 .sidebar {
   grid-column: 1/2;
@@ -119,25 +116,29 @@ li {
   background-color: var(--color-base-bg-two);
   border: 1px solid var(--color-base-text);
   border-radius: 10rem;
-  display: flex
-
+  display: flex;
 }
 
 #search-field {
   width: max-content;
-border: 0px;
   font-size: 2rem;
   font-weight: 1000;
   background-color: var(--color-base-bg-two);
-
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: #e8eaed;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.search-img-header{
+.search-img-header {
   width: 3rem;
-
 }
 .profile-container {
-  width: 30rem;
+  width: 30%;
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
@@ -220,7 +221,6 @@ border: 0px;
   padding: 1rem;
   display: grid;
   grid-template: 1fr auto / 1rem 1fr;
-
 }
 
 .text-block > .project-name {
@@ -270,38 +270,36 @@ div > h4 {
 .announ-and-trending .Announcement-border {
   width: 100%;
   height: 1px;
-  background-color: lightgray;}
-
-  .action-block> img {
-    height: 3rem;
-  }
-
-  .action-block{
-    display: flex;
-  }
-
-.trending-content{
-display: flex;
+  background-color: lightgray;
 }
 
-  .trend-img{
-    height: 5rem;
+.action-block > img {
+  height: 3rem;
+}
 
-  }
+.action-block {
+  display: flex;
+}
 
-  .trend{display: flex;
-  gap: 1rem;}
+.trending-content {
+  display: flex;
+}
 
+.trend-img {
+  height: 5rem;
+}
 
+.trend {
+  display: flex;
+  gap: 1rem;
+}
 
-  .action-block > img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  li >p:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
+.action-block > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 
-
+li > p:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}

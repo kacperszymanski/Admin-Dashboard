@@ -136,6 +136,8 @@ li {
 
 .search-img-header {
   width: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .profile-container {
   width: 30%;
@@ -302,4 +304,9 @@ div > h4 {
 li > p:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+}
+
+.search-img-container{
+  display: flex;
+  flex-direction: column;
 }
